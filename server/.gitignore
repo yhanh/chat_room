@@ -1,0 +1,6 @@
+.idea
+.vscode
+env.yaml
+.env.yaml
+*.DS_Store*
+vendor/
