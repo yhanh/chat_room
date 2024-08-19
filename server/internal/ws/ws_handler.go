@@ -81,8 +81,8 @@ func (h *Handler) JoinRoom(c *gin.Context) {
 }
 
 type RoomRes struct {
-	Id   string `join:"id"`
-	Name string `join:"name"`
+	Id   string `json:"id"`
+	Name string `json:"name"`
 }
 
 func (h *Handler) GetRooms(c *gin.Context) {
@@ -99,8 +99,8 @@ func (h *Handler) GetRooms(c *gin.Context) {
 }
 
 type ClientRes struct {
-	Id       string `join:"id"`
-	Username string `join:"username"`
+	Id       string `json:"id"`
+	Username string `json:"username"`
 }
 
 func (h *Handler) GetClients(c *gin.Context) {
